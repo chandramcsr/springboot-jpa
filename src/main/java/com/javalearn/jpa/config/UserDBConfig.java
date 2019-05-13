@@ -38,7 +38,7 @@ public class UserDBConfig {
 		properties.put("hibernate.hbm2ddl.auto", "update");
 		properties.put("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
 		return builder.dataSource(dataSource).properties(properties)
-				.packages("com.javalearn.jpa.model.user").persistenceUnit("User").build();
+				.packages("com.javalearn.jpa.model").persistenceUnit("User").build();
 	}
 
 	@Primary

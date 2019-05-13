@@ -9,16 +9,18 @@ import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.javalearn.jpa.mode.Book;
-import com.javalearn.jpa.mode.User;
+import com.javalearn.jpa.model.Book;
+import com.javalearn.jpa.model.User;
 import com.javalearn.jpa.repository.BookRepository;
 import com.javalearn.jpa.repository.UserRepository;
 
 @SpringBootApplication
 @RestController
+@ComponentScan("com.javalearn.jpa.*")
 public class SpringbootJpaApplication {
 
 	public static void main(String[] args) {

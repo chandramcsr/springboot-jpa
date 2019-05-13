@@ -36,7 +36,7 @@ public class BookDBConfig {
 		properties.put("hibernate.hbm2ddl.auto", "update");
 		properties.put("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
 		return builder.dataSource(dataSource).properties(properties)
-				.packages("com.javalearn.jpa.model.book").persistenceUnit("Book").build();
+				.packages("com.javalearn.jpa.model").persistenceUnit("Book").build();
 	}
 
 	@Bean(name = "bookTranManager")

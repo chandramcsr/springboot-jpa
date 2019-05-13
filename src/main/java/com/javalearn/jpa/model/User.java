@@ -1,4 +1,4 @@
-package com.javalearn.jpa.mode;
+package com.javalearn.jpa.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -12,11 +12,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="BOOK_TB")
-public class Book {
+@Table(name="USER_TB")
+public class User {
 
 	@Id
 	private int id;
-	private String name;
+	private String userName;
 	
 }
